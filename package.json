@@ -1,0 +1,46 @@
+{
+  "name": "hamletportfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewaHamlet/hamletPortfolio.git"
+  },
+  "keywords": [
+    "developer",
+    "designer",
+    "art",
+    "code",
+    "ux",
+    "ui"
+  ],
+  "author": "matthewahamlet@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewaHamlet/hamletPortfolio/issues"
+  },
+  "homepage": "https://github.com/MatthewaHamlet/hamletPortfolio#readme",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "lazy-line-painter": "^1.9.6",
+    "popper.js": "^1.14.7",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
