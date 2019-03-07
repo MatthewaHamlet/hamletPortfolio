@@ -28,6 +28,7 @@
   "homepage": "https://github.com/MatthewaHamlet/hamletPortfolio#readme",
   "devDependencies": {
     "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
@@ -37,6 +38,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "font-awesome-webpack": "0.0.5-beta.2",
     "jquery": "^3.3.1",
     "lazy-line-painter": "^1.9.6",
     "popper.js": "^1.14.7",

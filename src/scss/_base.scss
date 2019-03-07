@@ -1,0 +1,33 @@
+/* ----------Basic settings----------- */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+
+
+body html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: 'Arvo', serif;
+     
+            height: 100%; 
+            color: $fontColor; 
+            overflow: hidden;       
+}
+
+#main {
+    width: 100vw;
+    max-width: 1600px;
+    height: 100%;
+    background: $mainBgColor;
+    font-family: 'Arvo', serif;
+}

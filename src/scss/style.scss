@@ -1,4 +1,9 @@
-@import 'custom';
+@import './variables';
+@import './fonts';
+
+@import './navigation';
+@import './base';
+@import './custom';
 @import '~bootstrap/scss/bootstrap';
 
 

@@ -1,0 +1,140 @@
+/**  NAVIGATION **/
+.nav__container {
+    width: auto;
+    margin-top: -24px;
+
+    img[alt="Hamlet-logo"] {
+        width: 49px;
+    }
+
+    .hr--horizontal {
+        background: $bgColorAssets;
+        width: 70%;
+        height: 6px;
+        border-radius: 9px;
+        border: none;
+        margin: auto 12px;
+    }
+
+    .nav__list--item {
+        margin: auto 6px;
+        font-size: 22px;
+        font-weight: bold;
+        color: $fontColor;
+
+        &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid $fontColor;
+        }
+    }
+
+    li.list--decoration {
+        &:hover {
+            border-bottom: none;
+            cursor: unset;
+        }
+
+    }
+}
+
+/** NAVIGATION MEDIA QUERIES **/
+
+// Screen 320px
+@media all and (min-width: 320px) {
+    .hr--horizontal {
+        display: none;
+    }
+
+    .nav__container li.nav__list--item {
+        font-size: 16.5px;
+        margin: auto 3px;
+    }
+    img[alt="Hamlet-logo"] {
+        margin-right: 14px;
+    }
+}
+
+// Screen 375px
+@media all and (min-width: 375px) {
+    .hr--horizontal {
+        display: none;
+    }
+
+    .nav__container li.nav__list--item {
+        font-size: 16.5px;
+        margin-left: 12px;
+    }
+
+    img[alt="Hamlet-logo"] {
+        margin-right: 16px;
+    }
+}
+
+//  Screen 425px
+@media all and (min-width: 425px) {
+    .hr--horizontal {
+        display: none;
+    }
+
+    .nav__container li.nav__list--item {
+        font-size: 18.5px;
+        margin-left: 18px;
+    }
+
+    img[alt="Hamlet-logo"] {
+        margin-right: 16px;
+    }
+}
+
+//  Screen 768px
+@media all and (min-width: 768px) {
+    .nav__container .hr--horizontal {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .nav__container li.nav__list--item {
+        font-size: 18.5px;
+        margin-left: 8px;
+    }
+
+    img[alt="Hamlet-logo"] {
+        margin-right: 16px;
+    }
+}
+
+
+//  Screen 1024px
+@media all and (min-width: 1024px) {
+    .nav__container .hr--horizontal {
+        display: inline-block;
+        width: 62%;
+    }
+
+}
+
+//  Screen 1440px
+@media all and (min-width: 1440px) {
+    .nav__container .hr--horizontal {
+        display: inline-block;
+        width: 68%;
+    }
+
+    .nav__container li.nav__list--item {
+        font-size: 22px;
+        margin-left: 16px;
+    }
+}
+
+//  Screen 2560px
+@media all and (min-width: 2560px) {
+    .nav__container .hr--horizontal {
+        display: inline-block;
+        width: 78%;
+    }
+
+    .nav__container li.nav__list--item {
+        font-size: 32px;
+        margin-left: 16px;
+    }
+}

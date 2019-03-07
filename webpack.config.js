@@ -33,7 +33,13 @@ module.exports = {
                   { loader: 'css-loader', options: { importLoaders: 1 } },
                   'postcss-loader'
                 ]
-              }
+              },
+              {
+              test: /\.(png|svg|jpg|gif)$/,
+              use: [
+                  'file-loader'
+              ]
+            }
         ]
     },
     plugins: [
@@ -45,6 +51,10 @@ module.exports = {
             filename:'landing.html',
             template: 'src/landing.html',
             chunks: []
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
         })
     ]
 }
