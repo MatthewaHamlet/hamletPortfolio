@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
 
-    <!-- JavaScript -->
-    <script src="./bundle.js"></script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <div class="container-fluid nav__container fixed-top">
-      <ul class="nav">
-        <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
 
-        <hr class="hr--horizontal" />
+  <!-- JavaScript -->
+  <script src="./bundle.js"></script>
+</head>
 
-        <li class="nav__list--item">About</li>
-        <li class="nav__list--item list--decoration">&#183;</li>
-        <li class="nav__list--item">Contact</li>
-        <li class="nav__list--item list--decoration">&#183;</li>
-        <li class="nav__list--item">Blog</li>
-      </ul>
-    </div>
-    <!-- /Navigation -->
-    <main id="main">
-      <section class="landing">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="container__copy--left">
-                
-              </div>
+<body>
+  <!-- Navigation -->
+  <div class="container-fluid nav__container fixed-top">
+    <ul class="nav">
+      <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
+
+      <hr class="hr--horizontal" />
+
+      <li class="nav__list--item">About</li>
+      <li class="nav__list--item list--decoration">&#183;</li>
+      <li class="nav__list--item">Contact</li>
+      <li class="nav__list--item list--decoration">&#183;</li>
+      <li class="nav__list--item">Blog</li>
+    </ul>
+  </div>
+  <!-- /Navigation -->
+  <main id="main">
+    <section class="landing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-8 container--copy">
+            <h1 class="landing__header--copy">
+              Hi there! My name is Matt,
+              <br>
+              I like to make awesome stuff —
+            </h1>
+            <article>
+              <p>
+                That pretty much sums me up. I love dealing with complex problems in a creative way, whether it be
+                code, design or just fixing my partner's computer. I aim for simple, intuitive solutions that will
+                improve
+                the lives around me.
+              </p>
+              <p id="job--looker">Currently seeking employment as a front-end UI developer</p>
+            </article>
+            <div class="social__icons--btn">
+              <a href="#"><img src="./images/SVG/linkedinIcon.svg" alt="Social-icon"></a>
+              <a href=""><img src="./images/SVG/githubIcon.svg" alt="Social-icon"></a>
+              <a href="#" class="btn header__btn">Résumé</a>
             </div>
+            <div class="container__section--title">
+              <h2 class="section__title--copy">Work <div class="section__title--line"></div>
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-3 container--image">
+            <img src="./images/SVG/hamletMainImage.png" alt="">
           </div>
 
         </div>
+    </section>
+    <!-- Section Work -->
+    <section id="work">
+      <div class="container-fluid py-3 m-md-2 m-lg-2 container__card">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="w-100">
+            </div>
+            <div class="col-md-8">
+              <div class="card-block">
+               <p class="card--title">2018 •Design & Front-end Dev</p>
+            
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+ <!-- /Section Work -->
 
 
+  </main>
+</body>
 
-
-
-
-
-
-      </section>
-
-
-
-
-    </main>
-  </body>
 </html>

@@ -19,11 +19,11 @@
 
       <hr class="hr--horizontal" />
 
-      <li class="nav__list--item">About</li>
+      <li class="nav__list--item nav--link" role="about-link">About</li>
       <li class="nav__list--item list--decoration">&#183;</li>
-      <li class="nav__list--item">Contact</li>
+      <li class="nav__list--item nav--link" role="contact-link">Contact</li>
       <li class="nav__list--item list--decoration">&#183;</li>
-      <li class="nav__list--item">Blog</li>
+      <li class="nav__list--item nav--link" role="blog-link">Blog</li>
     </ul>
   </div>
   <!-- /Navigation -->
@@ -57,33 +57,43 @@
             </div>
           </div>
           <div class="col-md-3 container--image">
-            <img src="./images/SVG/hamletMainImage.png" alt="">
+            <img src="./images/SVG/hamletMainImage.png" alt="Image of person: Matthew Hamlet">
           </div>
 
         </div>
     </section>
     <!-- Section Work -->
-    <section id="work">
-      <div class="container-fluid py-3 m-md-2 m-lg-2 container__card">
+    <section id="work" class="p-1">
+
+      <div class="container  container__card">
         <div class="card">
           <div class="row">
-            <div class="col-md-4">
-              <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="w-100">
+            <div class="col-md-4 p-0 container__img--left">
+                <img src="http://via.placeholder.com/640x360
+                " class="w-100 h-100 p-0 m-0" alt="credit card checkout image">
             </div>
             <div class="col-md-8">
               <div class="card-block">
-               <p class="card--title">2018 •Design & Front-end Dev</p>
-            
-                <a href="#" class="btn btn-primary">Read More</a>
+               <p class="card--info-sub">2018 •Design & Front-end Dev</p>
+            <h4 class="card--title">Credit Card Checkout </h4>
+            <article class="card--article-copy">
+                A personal project inspired by the daily UI challenge. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut morbi tincidunt augue interdum velit. Hendrerit dolor magna eget est lorem ipsum dolor sit amet. Mollis aliquam ut porttitor leo. Velit dignissim sodales ut eu sem integer vitae justo. Sit amet purus gravida quis. Sed risus ultricies tristique nulla. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. 
+            </article>
+            <p class="card--info-sub">Personal Project - Making it easier to spend your money </p>
+                <a href="#" class="btn card__btn" role="read more link">Read More</a>
               </div>
             </div>
-
           </div>
         </div>
       </div>
+
+      
+
     </section>
  <!-- /Section Work -->
+<section id="test">
 
+</section>
 
   </main>
 </body>
