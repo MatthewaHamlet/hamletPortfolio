@@ -52,6 +52,11 @@ module.exports = {
             template: 'src/landing.html',
             chunks: []
         }),
+        new HtmlWebpackPlugin({
+            filename: 'works--post-page',
+            template: 'src/works--post-page.html',
+            chunks: []
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'

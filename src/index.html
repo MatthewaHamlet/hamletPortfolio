@@ -15,7 +15,7 @@
   <!-- css  -->
   <style>
 
-    body, html {
+#animation__body, html {
           position: absolute;
           width: 100%;
           height: 100%;
@@ -34,7 +34,7 @@
         }
 
           #mHamletLogoAnimationSvg {
-            width: 100vw;
+            /* width: 100vw; */
             height: 100%;
             position: relative;
             overflow: visible;
@@ -44,74 +44,56 @@
 
   <!-- lazylinepainter -->
   <script src="https://cdn.jsdelivr.net/npm/lazy-line-painter@1.9.4/lib/lazy-line-painter-1.9.4.min.js"></script>
+<script>
+// Animation Splash Page(index.html)
 
-  <script type="text/javascript">
-    (function () {
+(function () {
 
-      document.onreadystatechange = () => {
+document.onreadystatechange = () => {
 
-        if (document.readyState === 'complete') {
-          let el = document.querySelector('#mHamletLogoAnimationSvg');
-          let myAnimation = new LazyLinePainter(el, {
-            "ease": "easeLinear",
-            "strokeWidth": 12,
-            "strokeOpacity": 1,
-            "strokeColor": "#E6D6D3",
-            "strokeCap": "round",
-            "delay": 0
-          });
-          myAnimation.paint();
-        }
-      }
+  if (document.readyState === 'complete') {
+    let el = document.querySelector('#mHamletLogoAnimationSvg');
+    let myAnimation = new LazyLinePainter(el, {
+      "ease": "easeLinear",
+      "strokeWidth": 12,
+      "strokeOpacity": 1,
+      "strokeColor": "#E6D6D3",
+      "strokeCap": "round",
+      "delay": 0
+    });
+    myAnimation.paint();
+  }
+}
 
-    })();
+})();
 
-    setTimeout(() => {
-      window.top.location = "./landing.html";
-    }, 2800);
+setTimeout(() => {
+window.top.location = "./landing.html";
+}, 2800, 1);
 
-    setTimeout(() => {
-      var fadeTarget = document.querySelector('body');
-      var fadeEffect = setInterval(function () {
-        if (!fadeTarget.style.opacity) {
-          fadeTarget.style.opacity = 1;
-        }
-        if (fadeTarget.style.opacity > 0) {
-          fadeTarget.style.opacity -= 0.1;
-        } else {
-          clearInterval(fadeEffect);
-        }
-      }, 800);
-    }, 1000);
+setTimeout(() => {
+var fadeTarget = document.querySelector('#animation__body');
+var fadeEffect = setInterval(function () {
+  if (!fadeTarget.style.opacity) {
+    fadeTarget.style.opacity = 1;
+  }
+  if (fadeTarget.style.opacity > 0) {
+    fadeTarget.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 800);
+}, 1000);
+</script>
 
-   
-  </script>
 </head>
 
-<body>
+<body id='animation__body'>
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve" data-llp-composed="true"
     id="mHamletLogoAnimationSvg" class="lazy-line-painter">
     <style type="text/css">
-      .st0 {
-        display: none;
-      }
-
-      .st1 {
-        fill: #FFFFFF;
-        stroke: #E6D6D3;
-        stroke-width: 18;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-      }
-
-      .st2 {
-        fill: #FFFFFF;
-        stroke: #E6D6D3;
-        stroke-width: 3;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-      }
+    
     </style>
     <g id="Layer_1" class="st0">
 
@@ -154,7 +136,6 @@
     </g>
   </svg>
 
-  <script src="./bundle.js"></script>
 </body>
 
 </html>

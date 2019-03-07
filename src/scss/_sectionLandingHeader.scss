@@ -20,7 +20,8 @@ section.landing {
         width: 65%;
         margin-top: 111px;
         color: $fontColor;
-        font-weight: bold;
+        font-weight: 550;
+        font-family: 'Arvo', sans-serif;
     }
 
     article {
@@ -60,6 +61,7 @@ section.landing {
 
             &:hover {
                 box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
+                color: $bgColor;
             }
         }
     }
@@ -98,6 +100,11 @@ section.landing {
     .container--image {
         display: none;
     }
+    .container--copy .landing__header--copy {
+        width: 75%;
+    }
+
+
 }
 
 // Screens 375px
@@ -132,6 +139,11 @@ section.landing {
         display: none;
     }
 }
+
+// Screen max  575.98
+@media all and (max-width: 575.98) {
+
+} 
 
 // Screens 768px
 // Reveal right container on this breakpoint
