@@ -53,8 +53,8 @@ module.exports = {
             chunks: []
         }),
         new HtmlWebpackPlugin({
-            filename: 'works--post-page',
-            template: 'src/works--post-page.html',
+            filename: 'about.html',
+            template: 'src/about.html',
             chunks: []
         }),
         new webpack.ProvidePlugin({
