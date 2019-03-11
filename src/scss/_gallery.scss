@@ -1,0 +1,163 @@
+// Gallery
+#gallery {
+    padding-top: 1px;
+
+    @media screen and (min-width: 991px) {
+        padding: 60px 30px 0 30px;
+    }
+}
+
+.img-wrapper {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
+.img-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    i {
+        color: $bgColor;
+        font-size: 3em;
+    }
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    // Removes blue highlight
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    img {
+        margin: 0;
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        padding: 5%;
+
+        @media screen and (min-width: 768px) {
+            width: 60%;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 50%;
+        }
+    }
+}
+
+#nextButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 3em;
+    }
+}
+
+#prevButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 3em;
+    }
+}
+
+#exitButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 3em;
+    }
+}
+
+
+.hidden--content {
+    visibility: hidden;
+}
+
+section.testimonial {
+height: 100%;
+width: 100%;
+
+.container {
+    background: $bgColor;
+    height: 400px;
+    width: 100%;
+
+    
+   
+    .container__copy--testimonial {
+        width: 50%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-left: 8px solid $mainBgColor;
+        height: 80%;
+      
+
+        p {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 12px;
+            width: 100%;
+            color: $secondaryFontColor;
+
+            &::before {
+                content: '"';
+                font-size: 22px;
+                color: $fontColor;
+            }
+
+        }
+    }
+}
+   
+}
+
+
+

@@ -57,6 +57,12 @@ module.exports = {
             template: 'src/about.html',
             chunks: []
         }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: 'src/contact.html',
+            chunks: []
+        }),
+
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
