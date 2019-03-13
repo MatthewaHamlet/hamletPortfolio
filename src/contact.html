@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
-    <!-- JavaScript -->
-    <script src="./bundle.js"></script>
+
+<!-- Javascript -->
+<script src="./bundle.js"></script>
+
 </head>
-
 <body>
-<section class="contact">
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="container__flex--title">
-        <h2 class="section__title--copy">Contact</h2> <div class="section__title--line"></div>
-    </div>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et, quam quisquam qui, asperiores esse veritatis consequuntur alias fuga dolores quasi porro laboriosam nemo incidunt dignissimos cumque. Corrupti, porro laborum!
-           <img src="images/googleMap/googlemap.png" alt="">
-     
-        <div class="col-md-6 container__form--contact">
-            <div class="form-group">
-              <label for=""></label>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Full Name Please..">
-              <small id="helpId" class="form-text text-muted">Help text</small>
-              <label for=""></label>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Email">
-              <small id="helpId" class="form-text text-muted">Help text</small>
-              <label for=""></label>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Re-enter your email.. ">
-              <small id="helpId" class="form-text text-muted">Help text</small>
+  <!-- Navigation -->
+  <div class="container-fluid nav__container fixed-top">
 
-              <div class="form-group">
-                <label for=""></label>
-                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                <small id="helpId" class="text-muted">Help text</small>
-              </div>
-<img src="images/SVG/githubIcon.svg" alt=""><img src="images/SVG/linkedinIcon.svg" alt="">
-              <button type="submit"></button>
+        <ul class="nav">
+          <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
+    
+          <hr class="hr--horizontal" />
+    
+          <li class="nav__list--item nav--link" role="about-link">About</li>
+          <li class="nav__list--item list--decoration">&#183;</li>
+          <li class="nav__list--item nav--link" role="contact-link">Contact</li>
+          <li class="nav__list--item list--decoration">&#183;</li>
+          <li class="nav__list--item nav--link" role="blog-link">Blog</li>
+        </ul>
+      </div>
+      <!-- /Navigation -->
+<!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 container--contact-title">
+                    <h2>contact</h2>
+                    <div class="contact--title-line"></div>
+                </div>
+                <div class="col-md-4 container__image">
+                   <img src="images/googleMap/googlemap.png" alt="google map image">
+                </div>
+                <div class="col-md-4 container__form--contact">
+                   <div class="form-group">
+                     <label for=""></label>
+                     <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Full name">
+                     <label for=""></label>
+                     <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email" required>
+                     <label for=""></label>
+                     <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Re-enter email" required>
+                
+                     <ul>
+                         <li><img class="img-fluid" src="images/SVG/githubIcon.svg" alt=""></li>
+                         <li><img src="images/SVG/linkedinIcon.svg" alt=""></li>
+                         <li><button>Submit</button></li>
+                     </ul>
+                   </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
-
-
-
-</section>
-
-
-
-
+    </section>
+    <!-- /Contact Section -->
 </body>
-
 </html>
