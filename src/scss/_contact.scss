@@ -1,0 +1,186 @@
+#contact {
+    width: 100%;
+    height: auto;
+    margin-top: 58px;
+
+    .container--title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex: 1 1 16px;
+   
+
+    h2 {
+        font-size: 62px;
+        color: $bgColor;
+        flex: 1;
+        text-transform: uppercase;
+    }
+
+    .container--line {
+        width: 16px;
+        height: 3px;
+        background: $bgColor;
+        flex: 1;
+        margin: auto 0;
+    }
+}
+
+    .container__form--contact {
+        width: 100%;
+        margin-top: -24px;
+
+        .form-group {
+            background: transparent;
+
+            input, textarea {
+                border: none;
+                background: $bgColor;
+                margin-bottom: 12px;
+                border-radius: 22px;
+
+                &::placeholder {
+                    color: $mainBgColor;
+                }
+               
+            }
+
+            .social__icons--btn {
+                margin-top: 37px;
+        
+                img[alt="Social-icon"] {
+                    border-radius: 50%;
+                    margin-right: 12px;
+                    width: 40px;
+        
+        
+                    &:hover {
+                        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
+                    }
+                }
+        
+                .header__btn {
+                    width: 111px;
+                    height: 37px;
+                    background: $fontColor;
+                    margin: auto 0;
+                    border-radius: 22px;
+                    color: $bgColor;
+                    font-weight: bold;
+                    font-family: 'Arial', sans-serif;
+        
+                    &:hover {
+                        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
+                        color: $bgColor;
+                    }
+                }
+            }
+      
+        }
+    }
+
+    .container--copy {
+        margin: 12px;
+        padding: 0;
+        border-radius: 3px;
+        overflow: hidden;
+
+        p{
+            color: $mainBgColor;
+            margin-top: 24px;
+            width: 98%;
+            padding: 15px;
+        }
+
+        ul {
+            list-style: none;
+            color: $mainBgColor;
+            padding: 15px;
+
+          
+               li:first-of-type {
+                   margin-bottom: 12px;
+               }
+            
+      
+        }
+
+
+    }
+}
+
+@media all and (min-width: 768px) {
+    #contact {
+        margin-top: -2px;
+        .container--copy p {
+            margin-top: 2px;
+        }
+    
+    }
+    #contact > div > div.row > div:nth-child(1) > div {
+      margin: 25% 12.5%;
+      width: 70%;
+    }
+    #contact > div > div.container--title {
+       position: relative;
+       top: 90px;
+       left: -12px;
+       
+        h2 {
+            font-size: 76px;
+            line-height: 90px;  
+            position: relative;
+        }
+        .container--line {
+            position: relative;
+            left: -12px;
+            height: 7px;
+            border-radius: 22px;
+        }
+    
+    }
+    #contact > div > div.row > div:nth-child(1) > div > div > input:nth-child(4) {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+   .col-md { height: 95% !important; }
+    #contact > div > div.container--title {
+        position: relative;
+        top: 90px;
+        
+         h2 {
+             font-size: 114px;   
+             left: -22px;
+         }
+         .container--line {
+             left: -38px;
+             top: 6px;
+         }
+     
+     }
+}
+
+@media all and (min-width: 1440px) {
+    #contact > div > div.container--title > div.container--line {
+        left: -104px;
+    }
+
+    #contact > div > div.container--title {
+        position: relative;
+        top: 90px;
+        
+         h2 {
+             font-size: 114px;   
+             left: -46px;
+         }
+         .container--line {
+             left: -38px;
+             top: 6px;
+         }
+     
+     }
+}
+

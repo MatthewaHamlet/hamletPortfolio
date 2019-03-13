@@ -1,62 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
 
-<!-- Javascript -->
-<script src="./bundle.js"></script>
+    <!-- Javascript -->
+    <script src="./bundle.js"></script>
 
 </head>
+
 <body>
-  <!-- Navigation -->
-  <div class="container-fluid nav__container fixed-top">
+    <!-- Navigation -->
+    <div class="container-fluid nav__container fixed-top">
 
         <ul class="nav">
-          <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
-    
-          <hr class="hr--horizontal" />
-    
-          <li class="nav__list--item nav--link" role="about-link">About</li>
-          <li class="nav__list--item list--decoration">&#183;</li>
-          <li class="nav__list--item nav--link" role="contact-link">Contact</li>
-          <li class="nav__list--item list--decoration">&#183;</li>
-          <li class="nav__list--item nav--link" role="blog-link">Blog</li>
+            <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
+
+            <hr class="hr--horizontal" />
+
+            <li class="nav__list--item nav--link" role="about-link">About</li>
+            <li class="nav__list--item list--decoration">&#183;</li>
+            <li class="nav__list--item nav--link" role="contact-link">Contact</li>
+            <li class="nav__list--item list--decoration">&#183;</li>
+            <li class="nav__list--item nav--link" role="blog-link">Blog</li>
         </ul>
-      </div>
-      <!-- /Navigation -->
-<!-- Contact Section -->
+    </div>
+    <!-- /Navigation -->
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
+            <div class="container--title">
+                <h2>Contact</h2>
+                <div class="container--line"></div>
+            </div>
             <div class="row">
-                <div class="col-md-4 container--contact-title">
-                    <h2>contact</h2>
-                    <div class="contact--title-line"></div>
+                <div class="col-md">
+                    <div class="container__form--contact">
+
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input type="text" class="form-control" name="" id="" aria-describedby="textHelpId"
+                                placeholder="Please enter your full name" required>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                                placeholder="Email" required>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                                placeholder="Please re-enter you email" required>
+
+                            <div class="form-group">
+                                <label for=""></label>
+                                <textarea class="form-control" name="" id="" rows="3" placeholder="Drop me a line"></textarea>
+                            </div>
+
+                            <div class="social__icons--btn">
+                                <a href=""><img src="./images/SVG/linkedinIcon.svg" alt="Social-icon"></a>
+                                <a href=""><img src="./images/SVG/githubIcon.svg" alt="Social-icon"></a>
+                                <a href="" class="btn header__btn" role="resume button">Submit</a>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-md-4 container__image">
-                   <img src="images/googleMap/googlemap.png" alt="google map image">
-                </div>
-                <div class="col-md-4 container__form--contact">
-                   <div class="form-group">
-                     <label for=""></label>
-                     <input type="text" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Full name">
-                     <label for=""></label>
-                     <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email" required>
-                     <label for=""></label>
-                     <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Re-enter email" required>
-                
-                     <ul>
-                         <li><img class="img-fluid" src="images/SVG/githubIcon.svg" alt=""></li>
-                         <li><img src="images/SVG/linkedinIcon.svg" alt=""></li>
-                         <li><button>Submit</button></li>
-                     </ul>
-                   </div>
+                <div class="col-md container--copy">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+
+                    <ul>
+                        <li>Ph: 123-123-1234</li>
+                        <li>497 Evergreen Rd. Roseville, CA 95673</li>
+                        <li>+44 345 678 903</li>
+                        <li>adobexd@mail.com</li>
+                    </ul>
+                    <img src="images/googleMap/googlemap.png" alt="">
+
+
                 </div>
             </div>
+
+        </div>
         </div>
     </section>
     <!-- /Contact Section -->
 </body>
+
 </html>

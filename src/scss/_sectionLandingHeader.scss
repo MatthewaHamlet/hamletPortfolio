@@ -141,7 +141,7 @@ section.landing {
 }
 
 // Screen max  575.98
-@media all and (max-width: 575.98) {
+@media all and (max-width: 767.98) {
 
 } 
 
@@ -231,7 +231,6 @@ section.landing {
 
     .container {
         margin: 0 12px 0 106px !important;
-
 
         section.landing {
             margin-top: 4%;
@@ -330,9 +329,6 @@ section.landing {
                     color: $secondaryFontColor;
                     line-height: 14px;
                 }
-
-          
-
                 .card__btn {
                     float: right;
                     color: $fontColor;
@@ -351,12 +347,25 @@ section.landing {
 
 }
 
-
+// Screens 767px 
 @media all and (min-width: 767px) {
     #work {
         margin-top: 8%;
     }
     .container__card {
         width: 94%;
+    }
+}
+// Screens 1024px 
+@media all and (min-width: 1024px) {
+    #work {
+        margin-top: 8rem;
+    }
+}
+
+// Screens 1440px 
+@media all and (min-width: 1024px) {
+    #work {
+        margin-top: 21rem;
     }
 }

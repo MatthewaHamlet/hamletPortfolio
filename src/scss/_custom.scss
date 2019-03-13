@@ -1,168 +1,65 @@
-#contact {
-    width: 100%;
-    height: auto;
-    margin-top: 58px;
 
-    .container--title {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex: 1 1 16px;
-   
 
-    h2 {
-        font-size: 62px;
-        color: $bgColor;
-        flex: 1;
-    }
-
-    .container--line {
-        width: 16px;
-        height: 3px;
-        background: $bgColor;
-        flex: 1;
-        margin: auto 0;
-    }
+#blog--post-1 {
+    background: url(/images/BlogPost/blogPostOne.png)no-repeat center center;
+    background-size: cover;
 }
 
-    .container__form--contact {
-        width: 100%;
-        margin-top: -24px;
-
-        .form-group {
-            background: transparent;
-
-            input, textarea {
-                border: none;
-                background: $bgColor;
-                margin-bottom: 12px;
-                border-radius: 22px;
-
-                &::placeholder {
-                    color: $mainBgColor;
-                }
-               
-            }
-
-            .social__icons--btn {
-                margin-top: 37px;
-        
-                img[alt="Social-icon"] {
-                    border-radius: 50%;
-                    margin-right: 12px;
-                    width: 40px;
-        
-        
-                    &:hover {
-                        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
-                    }
-                }
-        
-                .header__btn {
-                    width: 111px;
-                    height: 37px;
-                    background: $fontColor;
-                    margin: auto 0;
-                    border-radius: 22px;
-                    color: $bgColor;
-                    font-weight: bold;
-                    font-family: 'Arial', sans-serif;
-        
-                    &:hover {
-                        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
-                        color: $bgColor;
-                    }
-                }
-            }
-      
-        }
-    }
-
-    .container--copy {
-        margin: 12px;
-        padding: 0;
-        border-radius: 3px;
-        overflow: hidden;
-
-        p{
-            color: $mainBgColor;
-            margin-top: 24px;
-            width: 98%;
-            padding: 15px;
-        }
-
-        ul {
-            list-style: none;
-            color: $mainBgColor;
-            padding: 15px;
-
-          
-               li:first-of-type {
-                   margin-bottom: 12px;
-               }
-            
-      
-        }
-
-
-    }
+#blog--post-2 {
+    background: url(/images/BlogPost/blogPostTwo.png)no-repeat center center;
+    background-size: cover;
 }
 
-@media all and (min-width: 768px) {
-    #contact {
-        margin-top: -2px;
-        .container--copy p {
-            margin-top: 2px;
-        }
-    
-    }
-    #contact > div > div.row > div:nth-child(1) > div {
-      margin: 25% 12.5%;
-      width: 70%;
-    }
-    #contact > div > div.container--title {
-       position: relative;
-       top: 90px;
-       left: -12px;
-       
-        h2 {
-            font-size: 76px;
-            line-height: 90px;  
-        }
-        .container--line {
-            position: relative;
-            left: -52px;
-            height: 7px;
-            border-radius: 22px;
-        }
-    
-    }
-    #contact > div > div.row > div:nth-child(1) > div > div > input:nth-child(4) {
-        margin-bottom: 24px;
-    }
-
+#blog--post-3 {
+    background: url(/images/BlogPost/blogPostThree.png)no-repeat center center;
+    background-size: cover;
 }
 
-@media all and (min-width: 1024px) {
-   .col-md { height: 95% !important; }
-    #contact > div > div.container--title {
+#blog--post-4 {
+    background: url(/images/BlogPost/blogPostFour.png)no-repeat center center;
+    background-size: cover;
+}
+
+#about > div > div > div.col-md-6.container__copy--blog {
+    background: $bgColor;
+    height: 406px;
+    position: relative;
+
+    p {
         position: relative;
-        top: 90px;
-        
-         h2 {
-             font-size: 120px;   
-         }
-         .container--line {
-             left: -38px;
-             top: 12px;
-         }
-     
-     }
-}
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        display: block;
+        border-left: 8px solid $fontColor;
+        padding-left: 12px;
+        text-align: left;
+       
+    }
 
-@media all and (min-width: 1440px) {
-    #contact > div > div.container--title > div.container--line {
-        left: -104px;
+    .card__btn {
+        position: absolute;
+        bottom: 22px;
+        left: 36px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
+#main > section.landing > div > div > div.col-md-3.container--image > img {
+    width: 480px;
+    left: -9.5rem;
+    top: $bgColor;
+
+    @media all and (min-width: 1024px){
+        width: 560px;
+    }
+    @media all and (min-width: 1440px){
+        width: 620px;
+        top: 7rem;
+    }
+
+}

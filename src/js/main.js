@@ -23,6 +23,8 @@ function cardImage(element, image) {
 navLink('[role="about-link"]', 'about.html');
 navLink('[role="contact-link"]', 'contact.html');
 navLink('[role="blog-link"]', 'blog.html');
+navLink('img[alt="Hamlet-logo"', 'landing.html')
+
 
 // Anchor links function object, all pages
 var anchorLinksObj = {

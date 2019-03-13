@@ -15,6 +15,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'src'),
         port: 8800,
         watchContentBase: true,
+   
     },
     module: {
         rules: [
@@ -60,6 +61,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'contact.html',
             template: 'src/contact.html',
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'blog.html',
+            template: 'src/blog.html',
             chunks: []
         }),
 
