@@ -1,65 +1,23 @@
-
-
-#blog--post-1 {
-    background: url(/images/BlogPost/blogPostOne.png)no-repeat center center;
-    background-size: cover;
-}
-
-#blog--post-2 {
-    background: url(/images/BlogPost/blogPostTwo.png)no-repeat center center;
-    background-size: cover;
-}
-
-#blog--post-3 {
-    background: url(/images/BlogPost/blogPostThree.png)no-repeat center center;
-    background-size: cover;
-}
-
-#blog--post-4 {
-    background: url(/images/BlogPost/blogPostFour.png)no-repeat center center;
-    background-size: cover;
-}
-
-#about > div > div > div.col-md-6.container__copy--blog {
+#about > div > div > div.col-sm.col-md-6.container__copy--about.container__works--post-copy {
     background: $bgColor;
-    height: 406px;
-    position: relative;
-
-    p {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 14px;
-        display: block;
-        border-left: 8px solid $fontColor;
-        padding-left: 12px;
-        text-align: left;
-       
-    }
-
-    .card__btn {
-        position: absolute;
-        bottom: 22px;
-        left: 36px;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
+     p {
+         font-family: 'Arvo', sans-serif;
+         font-size: 14px;
+         color: $secondaryFontColor;
+         border: none;
+         text-align: left;
+     }
 }
 
-#main > section.landing > div > div > div.col-md-3.container--image > img {
-    width: 480px;
-    left: -9.5rem;
-    top: $bgColor;
-
-    @media all and (min-width: 1024px){
-        width: 560px;
-    }
-    @media all and (min-width: 1440px){
-        width: 620px;
-        top: 7rem;
-    }
-
+#img--macbook {
+   height: 306px;
+    background: url(/images/workPosts/workPostOne/worksPostOneMacBook.png)no-repeat center ;
+    background-size: contain;
 }
+#img--iphone {
+    height: 306px;
+     background: url(/images/workPosts/workPostOne/worksPostOneIphone.png)no-repeat center ;
+     background-size: contain;
+ }
+
+

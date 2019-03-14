@@ -32,7 +32,7 @@ var anchorLinksObj = {
     gitHub : 'https://github.com/MatthewaHamlet',
     // Update this with resume link when created 
     resumeLink : 'http://placeholder.com',
-    worksPost00: 'works--post-page.html' 
+    worksPost00: 'works--post-page00.html' 
 }
 // Anchor links injection on all pages that apply
 anchorLinks('div.social__icons--btn > a:nth-child(1)', anchorLinksObj.linkedIn);
