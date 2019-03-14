@@ -3,33 +3,44 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>About</title>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> 
+    <!-- Title -->
+    <title>Matthew Hamlet</title>
+  
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    
     <!-- JavaScript -->
     <script src="./bundle.js"></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <div class="container-fluid nav__container fixed-top">
+  <!-- Navigation -->
+  <div class="container-fluid nav__container fixed-top">
 
         <ul class="nav">
-            <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
-
-            <hr class="hr--horizontal" />
-
-            <li class="nav__list--item nav--link" role="about-link">About</li>
-            <li class="nav__list--item list--decoration">&#183;</li>
-            <li class="nav__list--item nav--link" role="contact-link">Contact</li>
-            <li class="nav__list--item list--decoration">&#183;</li>
-            <li class="nav__list--item nav--link" role="blog-link">Blog</li>
+          <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
+    
+          <hr class="hr--horizontal" />
+    
+          <li class="nav__list--item nav--link" role="about-link">About</li>
+          <li class="nav__list--item list--decoration">&#183;</li>
+          <li class="nav__list--item nav--link" role="contact-link">Contact</li>
+          <li class="nav__list--item list--decoration">&#183;</li>
+          <li class="nav__list--item nav--link" role="blog-link">Blog</li>
         </ul>
-    </div>
-    <!-- /Navigation -->
+      </div>
+      <!-- /Navigation -->
 
     <main id="main">
 
@@ -59,20 +70,23 @@
                             <a href="" class="btn header__btn" role="resume button">Résumé</a>
                         </div>
                         <div class="container__section--title">
-                            <h2 class="section__title--copy">About <div class="section__title--line"></div>
+                            <h2 class="section__title--copy">Work <div class="section__title--line"></div>
                             </h2>
                         </div>
                     </div>
-                    <div class="col-sm-3  col-md-3  ">
-                        <img class="img-fluid" src="./images/workPosts/workPostOne/workPostOneHeader.png" alt="i-pad app post image">
+                    <div class="col-sm-3  col-md-4">
+                        <img src="./images/workPosts/workPostOne/workPostOneHeader.png" alt="i-pad app post image">
                     </div>
                 </div>
         </section>
         <!-- /Header -->
-        <!-- About Section -->
+        <!-- Works Section -->
         <section id="about">
             <div class="container">
                 <div class="row">
+
+                        <div class="col-sm col-md-6" id="img--iphone"></div>
+
                     <div class="col-sm col-md-6 container__copy--about container__works--post-copy">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae natus cumque debitis
                             vitae commodi
@@ -84,7 +98,7 @@
                             impedit magni
                             voluptas vero similique eum.</p>
                     </div>
-                    <div class="col-sm col-md-6" id="img--iphone"></div>
+                   
                 </div>
             </div>
 
@@ -97,7 +111,7 @@
         </section>
         <!-- /works Section -->
         <!-- Testimonial Section -->
-        <section class="testimonial">
+        <section class="testimonial" id="works--testimonial">
             <div class="container">
                 <div class="row h-100">
                     <div class="col-md">
@@ -110,7 +124,8 @@
             </div>
         </section>
         <!-- /Testimonial Section -->
-        <div class="container">
+        <!-- Development Section -->
+        <div class="container pt-2">
             <div class="row">
                 <div class="col-sm col-md-4 text-center">
                     <h3 class="text-left">Sketch</h3>
@@ -124,14 +139,14 @@
                     <h3 class="text-right">Code</h3>
                     <img src="images/workPosts/workPostOne/Group 248.png" alt="process image">
                 </div>
-                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit."</p>
             </div>
+            <p class="text-center w-100">"Lorem ipsum dolor, sit amet consectetur adipisicing elit."</p>
         </div>
+        <!-- /Development Section -->
         <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
-
                     <div class="col-md-4 section--email">
                         <p>Subscribe to AdobeXD via Email</p>
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
@@ -146,7 +161,6 @@
                             <!-- /Email Sign-up -->
                         </div>
                     </div>
-
                     <div class="col-md">
 
                         <div>
@@ -195,7 +209,7 @@
             </div>
         </footer>
         <!-- /Footer -->
-
+    </main>
 </body>
 
 </html>

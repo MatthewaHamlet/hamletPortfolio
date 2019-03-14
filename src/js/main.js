@@ -37,14 +37,14 @@ var anchorLinksObj = {
 // Anchor links injection on all pages that apply
 anchorLinks('div.social__icons--btn > a:nth-child(1)', anchorLinksObj.linkedIn);
 anchorLinks('[alt="github"]', anchorLinksObj.gitHub);
-anchorLinks('[role="resume button"', anchorLinksObj.resumeLink);
 anchorLinks('.card__btn', anchorLinksObj.worksPost00)
 
 // Card image array.
-var imgArr = ['./images/cardImages/Mask Group 2.png'];
+var imgArr = ['./images/cardImages/Mask Group 2.png', './images/workPosts/workPostTwo/workPostTwoHeaderIpad.png'];
 // Card image 
 // Could use a loop/each here
 cardImage('[alt="credit card checkout image"]', imgArr[0]);
+cardImage('[alt="Inkwell post image"]', imgArr[1]);
 
 
 // Gallery 

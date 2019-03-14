@@ -1,23 +1,84 @@
-#about > div > div > div.col-sm.col-md-6.container__copy--about.container__works--post-copy {
+#about>div>div>div.col-sm.col-md-6.container__copy--about.container__works--post-copy {
     background: $bgColor;
-     p {
-         font-family: 'Arvo', sans-serif;
-         font-size: 14px;
-         color: $secondaryFontColor;
-         border: none;
-         text-align: left;
-     }
+
+    p {
+        font-family: 'Arvo', sans-serif;
+        font-size: 14px;
+        color: $secondaryFontColor;
+        border: none;
+        text-align: left;
+    }
+}
+
+#works--testimonial {
+    margin-top: -4rem;
+    overflow: hidden;
+
+    @media all and (min-width: 768px) {
+        margin-top: -.4rem;
+    }
 }
 
 #img--macbook {
-   height: 306px;
-    background: url(/images/workPosts/workPostOne/worksPostOneMacBook.png)no-repeat center ;
+    height: 306px;
+    background: url(/images/workPosts/workPostOne/worksPostOneMacBook.png)no-repeat center;
     background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+    @media all and (min-width: 1440px) {
+        height: 506px;
+    }
 }
+
 #img--iphone {
     height: 306px;
-     background: url(/images/workPosts/workPostOne/worksPostOneIphone.png)no-repeat center ;
-     background-size: contain;
- }
+    background: url(/images/workPosts/workPostOne/worksPostOneIphone.png)no-repeat center;
+    background-size: contain;
 
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
 
+    @media all and (min-width: 1440px) {
+        height: 416px;
+    }
+
+}
+
+img[alt="i-pad app post image"] {
+    width: 408px;
+    margin: 0 auto;
+    padding: 6px;
+
+    @media all and (min-width: 320px) {
+        width: 280px
+    }
+
+    @media all and (min-width: 375px) {
+        width: 340px
+    }
+    @media all and (min-width: 375px) {
+        width: 388px
+    }
+
+    @media all and (min-width: 768px) {
+        width: 408px;
+        position: absolute;
+        top: 5rem;
+        left: -9rem;
+    }
+
+    @media all and (min-width: 1024px) {
+        width: 468px;
+        position: absolute;
+        left: -8rem;
+    }
+
+    @media all and (min-width: 1440px) {
+        width: 508px;
+        position: absolute;
+        left: -7rem;
+    }
+}
