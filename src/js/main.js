@@ -30,21 +30,27 @@ navLink('img[alt="Hamlet-logo"', 'landing.html')
 var anchorLinksObj = {
     linkedIn : 'https://www.linkedin.com/in/matthewahamlet/',
     gitHub : 'https://github.com/MatthewaHamlet',
-    // Update this with resume link when created 
-    resumeLink : 'http://placeholder.com',
-    worksPost00: 'works--post-page00.html' 
+    worksPost00: 'works--post-page00.html',
+    worksPost01: 'works--post-page01.html',
+    worksPost02: 'works--post-page02.html'
 }
+
 // Anchor links injection on all pages that apply
 anchorLinks('div.social__icons--btn > a:nth-child(1)', anchorLinksObj.linkedIn);
 anchorLinks('[alt="github"]', anchorLinksObj.gitHub);
-anchorLinks('.card__btn', anchorLinksObj.worksPost00)
+anchorLinks('[role="read more link 00"]', anchorLinksObj.worksPost00);
+anchorLinks('[role="read more link 01"]', anchorLinksObj.worksPost01);
+anchorLinks('[role="read more link 02"]', anchorLinksObj.worksPost02);
 
 // Card image array.
-var imgArr = ['./images/cardImages/Mask Group 2.png', './images/workPosts/workPostTwo/workPostTwoHeaderIpad.png'];
+var imgArr = ['./images/cardImages/Mask Group 2.png', 
+'./images/workPosts/workPostTwo/workPostTwoHeaderIpad.png',
+'./images/workPosts/workPostThree/workPostThreeCardImg.png'];
 // Card image 
 // Could use a loop/each here
 cardImage('[alt="credit card checkout image"]', imgArr[0]);
 cardImage('[alt="Inkwell post image"]', imgArr[1]);
+cardImage('[alt="Creative Agency Template Image"]', imgArr[2]);
 
 
 // Gallery 

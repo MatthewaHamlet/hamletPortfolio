@@ -31,3 +31,12 @@ body html {
     background: $mainBgColor;
     font-family: 'Arvo', serif;
 }
+
+
+// Reset button focus globally 
+
+.btn:focus, .btn.focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
