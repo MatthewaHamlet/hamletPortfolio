@@ -190,50 +190,55 @@
           Disqus.</a></noscript>
     </section>
     <!-- /Disqus Comment Section -->
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <!-- Row -->
-        <div class="row">
-          <div class="col-md-4 section--email">
-            <!-- Email Sign-up -->
-            <div class="form-group" action="./php/subscribe.php" method="post">
-              <label for="email"></label>
-              <div class="flex">
-                <input type="email" class="form-control" name="email" aria-describedby="emailHelpId"
-                  placeholder="Email..">
-                <button value="Send" type="submit">SEND</button>
+      <!-- Footer -->
+      <footer>
+          <div class="container">
+            <!-- Row -->
+            <div class="row">
+              <div class="col-md-4 section--email">
+                <!-- Email Sign-up -->
+                <div class="form-group">
+                  <!-- MailChimp -->
+                  <form action="https://facebook.us12.list-manage.com/subscribe/post" method="POST">
+                    <input type="hidden" name="u" value="2806bfce93e3b5eb1e484110c">
+                    <input type="hidden" name="id" value="a56bdb8062">
+                <!-- /MailChimp -->
+                  <div class="flex">
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelpId"
+                      placeholder="Email.." name="MERGE0" id="MERGE0">  
+                    <button value="Send" type="submit">SEND</button>
+                 </form>
+                  </div>
+                  <!-- /Email Sign-up -->
+                </div>
               </div>
-              <!-- /Email Sign-up -->
+              <div class="col-md">
+                <!-- Contact -->
+                <div>
+                  <ul>
+                    <li><a href="tel:5108809752">+510 880 9752</a></li>
+                    <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">MATTHEWAHAMLET@GMAIL.COM</a></li>
+                    <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">Hire Me</a></li>
+                  </ul>
+                </div>
+                <!-- /Contact -->
+              </div>
+              <div class="col-md">
+                <!-- Project List Links -->
+                <div>
+                  <ul>
+                    <li><a href="works--post-page00.html">Credit Card Checkout</a></li>
+                    <!-- TODO: UPDATE WITH NEW WORK POST ITEMS -->
+                    <li><a href="#">#</a></li>
+                  </ul>
+                </div>
+                <!-- /Project List Links -->
+              </div>
             </div>
+            <!-- /Row -->
           </div>
-          <div class="col-md">
-            <!-- Contact -->
-            <div>
-              <ul>
-                <li><a href="tel:5108809752">+510 880 9752</a></li>
-                <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">MATTHEWAHAMLET@GMAIL.COM</a></li>
-                <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">Hire Me</a></li>
-              </ul>
-            </div>
-            <!-- /Contact -->
-          </div>
-          <div class="col-md">
-            <!-- Project List Links -->
-            <div>
-              <ul>
-                <li><a href="works--post-page00.html">Credit Card Checkout</a></li>
-                <!-- TODO: UPDATE WITH NEW WORK POST ITEMS -->
-                <li><a href="#">#</a></li>
-              </ul>
-            </div>
-            <!-- /Project List Links -->
-          </div>
-        </div>
-        <!-- /Row -->
-      </div>
-    </footer>
-    <!-- /Footer -->
+        </footer>
+        <!-- /Footer -->
   </main>
   <!-- Main -->
   <!-- Disqus Javascript -->

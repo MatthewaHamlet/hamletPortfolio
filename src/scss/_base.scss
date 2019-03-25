@@ -16,7 +16,6 @@ body html {
             display: flex;
             flex-wrap: wrap;
             font-family: 'Arvo', serif;
-     
             height: 100%; 
             color: $fontColor; 
             overflow: hidden;       
@@ -52,4 +51,8 @@ a {
 // Reset Focus Outline Globally 
 *:focus {
     outline: none;
+}
+// Hidden content 
+.hidden--content {
+    visibility: hidden;
 }

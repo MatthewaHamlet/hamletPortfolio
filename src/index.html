@@ -7,142 +7,205 @@
 <!--<![endif]-->
 
 <head>
-   <!-- Meta -->
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <meta name="msapplication-TileColor" content="#da532c">
-   <meta name="theme-color" content="#ffffff"> 
-   <!-- Title -->
-   <title>Matthew Hamlet</title>
- 
-   <!-- Favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-   <link rel="manifest" href="images/favicons/site.webmanifest">
-   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Title -->
+  <title>Matthew Hamlet</title>
 
-  <!-- css  -->
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+   <!-- Javascript -->
+   <script src="./bundle.js"></script>
+
+  <!-- CSS  -->
   <style>
+    #animation__body,
+    html {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-sizing: border-box;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.247) 50%, rgba(230, 214, 211, 0.253) 50%, rgba(255, 255, 255, 1) 100%);
+      opacity: 1;
+    }
 
-#animation__body, html {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top:0;
-          left:0;
-          margin: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-          box-sizing: border-box; 
-          background: rgb(255,255,255);
-          background: linear-gradient(180deg, rgba(255, 255, 255, 0.247) 50%, rgba(230, 214, 211, 0.253) 50%, rgba(255,255,255,1) 100%);
-          opacity: 1;
+    #mHamletLogoAnimationSvg {
+      /* width: 100vw; */
+      height: 100%;
+      position: relative;
+      overflow: visible;
+      z-index: 2;
+    }
+  </style>
 
-        }
-
-          #mHamletLogoAnimationSvg {
-            /* width: 100vw; */
-            height: 100%;
-            position: relative;
-            overflow: visible;
-            z-index: 2;
-          }
-      </style>
-
-  <!-- lazylinepainter -->
+  <!-- Lazy Line Painter -->
   <script src="https://cdn.jsdelivr.net/npm/lazy-line-painter@1.9.4/lib/lazy-line-painter-1.9.4.min.js"></script>
-<script>
-// Animation Splash Page(index.html)
+  <script>
+    // Animation Splash Page(index.html)
+    (function () {
 
-(function () {
+      document.onreadystatechange = () => {
 
-document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+          let el = document.querySelector('#mHamletLogoAnimationSvg');
+          let myAnimation = new LazyLinePainter(el, {
+            "ease": "easeLinear",
+            "strokeWidth": 12,
+            "strokeOpacity": 1,
+            "strokeColor": "#E6D6D3",
+            "strokeCap": "round",
+            "delay": 0
+          });
+          myAnimation.paint();
+        }
+      }
 
-  if (document.readyState === 'complete') {
-    let el = document.querySelector('#mHamletLogoAnimationSvg');
-    let myAnimation = new LazyLinePainter(el, {
-      "ease": "easeLinear",
-      "strokeWidth": 12,
-      "strokeOpacity": 1,
-      "strokeColor": "#E6D6D3",
-      "strokeCap": "round",
-      "delay": 0
-    });
-    myAnimation.paint();
-  }
-}
+    })();
 
-})();
+    // Timeout for page transition to landing.html
+    setTimeout(() => {
+      window.top.location = "./landing.html";
+    }, 2800, 1);
 
-setTimeout(() => {
-window.top.location = "./landing.html";
-}, 2800, 1);
+    // Fade page 
+    setTimeout(() => {
+      var fadeTarget = document.querySelector('#animation__body');
+      var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+          fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+          fadeTarget.style.opacity -= 0.1;
+        } else {
+          clearInterval(fadeEffect);
+        }
+      }, 800);
+    }, 1000);
 
-setTimeout(() => {
-var fadeTarget = document.querySelector('#animation__body');
-var fadeEffect = setInterval(function () {
-  if (!fadeTarget.style.opacity) {
-    fadeTarget.style.opacity = 1;
-  }
-  if (fadeTarget.style.opacity > 0) {
-    fadeTarget.style.opacity -= 0.1;
-  } else {
-    clearInterval(fadeEffect);
-  }
-}, 800);
-}, 1000);
-</script>
+  </script>
 
 </head>
 
 <body id='animation__body'>
+
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve" data-llp-composed="true"
     id="mHamletLogoAnimationSvg" class="lazy-line-painter">
-    <style type="text/css">
-    
-    </style>
-    <g id="Layer_1" class="st0">
 
-      <image style="display:inline;overflow:visible;" width="1378" height="216" xlink:href="Group 261.png" transform="matrix(1.397 0 0 1.397 -5 389.1292)">
-      </image>
+    <g id="Layer_1" class="st0">
+      <image style="display:inline;overflow:visible;" 
+      width="1378" height="216" 
+      xlink:href="Group 261.png" 
+      transform="matrix(1.397 0 0 1.397 -5 389.1292)">
+    </image>
     </g>
+
     <g id="Layer_2">
       <g>
-        <line class="st1" x1="1911" y1="538.5" x2="1124" y2="538.5" data-llp-id="mHamletLogoAnimationSvg-0"
-          data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
-        <line class="st1" x1="1073" y1="649" x2="1100" y2="649" data-llp-id="mHamletLogoAnimationSvg-1"
-          data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
-        <line class="st1" x1="1073" y1="429" x2="1100" y2="429" data-llp-id="mHamletLogoAnimationSvg-2"
-          data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
-        <line class="st1" x1="1100" y1="649" x2="1100" y2="429" data-llp-id="mHamletLogoAnimationSvg-3"
-          data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
+        <line class="st1" 
+        x1="1911" y1="538.5" x2="1124" y2="538.5" 
+        data-llp-id="mHamletLogoAnimationSvg-0"
+        data-llp-duration="720" 
+        data-llp-delay="0" 
+        fill-opacity="1" 
+        />
+        <line class="st1"
+         x1="1073" y1="649" x2="1100" y2="649" 
+         data-llp-id="mHamletLogoAnimationSvg-1"
+         data-llp-duration="720" 
+         data-llp-delay="0" 
+         fill-opacity="1" 
+         />
+        <line class="st1"
+         x1="1073" y1="429" x2="1100" y2="429" 
+         data-llp-id="mHamletLogoAnimationSvg-2"
+         data-llp-duration="720" 
+         data-llp-delay="0" 
+         fill-opacity="1" 
+         />
+        <line class="st1" 
+         x1="1100" y1="649" x2="1100" y2="429" 
+         data-llp-id="mHamletLogoAnimationSvg-3"
+         data-llp-duration="720" 
+         data-llp-delay="0" 
+         fill-opacity="1" 
+         />
         <g>
           <g>
-            <path class="st1" d="M956,565h-38v102c-18.3,20.6-36.7,20.6-55,0V411c34.4-49.5,64.2,15.4,95,53c30.8-37.6,60.6-102.5,95-53v256&#10;&#9;&#9;&#9;&#9;&#9;c-18.3,20.6-36.7,20.6-55,0V565h-38"
-              data-llp-id="mHamletLogoAnimationSvg-4" data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
+            <path class="st1" 
+            d="M956,565h-38v102c-18.3,20.6-36.7,20.6-55,0V411c34.4-49.5,64.2,15.4,95,53c30.8-37.6,60.6-102.5,95-53v256&#10;&#9;&#9;&#9;&#9;&#9;c-18.3,20.6-36.7,20.6-55,0V565h-38"
+            data-llp-id="mHamletLogoAnimationSvg-4" 
+            data-llp-duration="720" 
+            data-llp-delay="0" 
+            fill-opacity="1"
+            />
           </g>
         </g>
         <g>
-          <polyline class="st2" points="1011,472 1011,522 969,522 1010.5,472.5 &#9;&#9;&#9;" data-llp-id="mHamletLogoAnimationSvg-5"
-            data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
+          <polyline class="st2" 
+          points="1011,472 1011,522 969,522 1010.5,472.5 &#9;&#9;&#9;" 
+          data-llp-id="mHamletLogoAnimationSvg-5" 
+          data-llp-duration="720" 
+          data-llp-delay="0" 
+          fill-opacity="1" 
+          />
         </g>
         <g>
-          <polyline class="st2" points="905,472 905,522 947,522 905.5,472.5 &#9;&#9;&#9;" data-llp-id="mHamletLogoAnimationSvg-6"
-            data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
+          <polyline class="st2" 
+          points="905,472 905,522 947,522 905.5,472.5 &#9;&#9;&#9;" 
+          data-llp-id="mHamletLogoAnimationSvg-6" 
+          data-llp-duration="720" 
+          data-llp-delay="0" 
+          fill-opacity="1" 
+          />
         </g>
-        <line class="st1" x1="5" y1="538.5" x2="792" y2="538.5" data-llp-id="mHamletLogoAnimationSvg-7"
-          data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
-        <line class="st1" x1="843" y1="649" x2="816" y2="649" data-llp-id="mHamletLogoAnimationSvg-8" data-llp-duration="720"
-          data-llp-delay="0" fill-opacity="1" style="" />
-        <line class="st1" x1="843" y1="429" x2="816" y2="429" data-llp-id="mHamletLogoAnimationSvg-9" data-llp-duration="720"
-          data-llp-delay="0" fill-opacity="1" style="" />
-        <line class="st1" x1="816" y1="649" x2="816" y2="429" data-llp-id="mHamletLogoAnimationSvg-10"
-          data-llp-duration="720" data-llp-delay="0" fill-opacity="1" style="" />
+
+        <line class="st1" 
+          x1="5" y1="538.5" x2="792" y2="538.5" 
+          data-llp-id="mHamletLogoAnimationSvg-7" 
+          data-llp-duration="720" 
+          data-llp-delay="0" 
+          fill-opacity="1" 
+          />
+        <line class="st1" 
+          x1="843" y1="649" x2="816" y2="649" 
+          data-llp-id="mHamletLogoAnimationSvg-8" 
+          data-llp-duration="720" 
+          data-llp-delay="0" 
+          fill-opacity="1" 
+          />
+        <line class="st1" 
+          x1="843" y1="429" x2="816" y2="429" 
+          data-llp-id="mHamletLogoAnimationSvg-9" 
+          data-llp-duration="720" 
+          data-llp-delay="0" 
+          fill-opacity="1" 
+          />
+        <line class="st1" 
+          x1="816" y1="649" x2="816" y2="429" 
+          data-llp-id="mHamletLogoAnimationSvg-10" 
+          data-llp-duration="720" 
+          data-llp-delay="0" 
+          fill-opacity="1" 
+          />
+
       </g>
     </g>
   </svg>

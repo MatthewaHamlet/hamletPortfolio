@@ -2,24 +2,24 @@
 <html lang="en">
 
 <head>
-   <!-- Meta -->
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <meta name="msapplication-TileColor" content="#da532c">
-   <meta name="theme-color" content="#ffffff"> 
-   <!-- Title -->
-   <title>Matthew Hamlet</title>
- 
-   <!-- Favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-   <link rel="manifest" href="images/favicons/site.webmanifest">
-   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Title -->
+  <title>Matthew Hamlet</title>
 
-    <!-- Javascript -->
-    <script src="./bundle.js"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+  <!-- Javascript -->
+  <script src="./bundle.js"></script>
 
 </head>
 
@@ -39,128 +39,114 @@
     </ul>
   </div>
   <!-- /Navigation -->
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="container--title">
-                <h2>Contact</h2>
-                <div class="container--line"></div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="container--title">
+        <h2>Contact</h2>
+        <div class="container--line"></div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="container__form--contact">
+
+            <div class="form-group">
+              <label for=""></label>
+              <form action="php/mail.php" method="POST">
+              <input type="text" class="form-control" name="name" id="" aria-describedby="textHelpId"
+                placeholder="Please enter your full name" required>
+              <input type="email" class="form-control" name="email" id="" aria-describedby="emailHelpId" placeholder="Email"
+                required>
+              <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                placeholder="Please re-enter you email" required>
+
+              <div class="form-group">
+                <label for=""></label>
+                <textarea class="form-control" name="message" id="" rows="3" placeholder="Drop me a line"></textarea>
+              </div>
+
+              <div class="social__icons--btn">
+                <a href=""><img src="./images/SVG/linkedinIcon.svg" alt="Social-icon"></a>
+                <a href=""><img src="./images/SVG/githubIcon.svg" alt="Social-icon"></a>
+                <a href="" class="btn header__btn" role="resume button">Submit</a>
+              </form>
+              </div>
+
             </div>
-            <div class="row">
-                <div class="col-md">
-                    <div class="container__form--contact">
-
-                        <div class="form-group">
-                            <label for=""></label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="textHelpId"
-                                placeholder="Please enter your full name" required>
-                            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                                placeholder="Email" required>
-                            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                                placeholder="Please re-enter you email" required>
-
-                            <div class="form-group">
-                                <label for=""></label>
-                                <textarea class="form-control" name="" id="" rows="3" placeholder="Drop me a line"></textarea>
-                            </div>
-
-                            <div class="social__icons--btn">
-                                <a href=""><img src="./images/SVG/linkedinIcon.svg" alt="Social-icon"></a>
-                                <a href=""><img src="./images/SVG/githubIcon.svg" alt="Social-icon"></a>
-                                <a href="" class="btn header__btn" role="resume button">Submit</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md container--copy">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-
-                    <ul>
-                        <li>Ph: 123-123-1234</li>
-                        <li>497 Evergreen Rd. Roseville, CA 95673</li>
-                        <li>+44 345 678 903</li>
-                        <li>adobexd@mail.com</li>
-                    </ul>
-                    <img src="images/googleMap/googlemap.png" alt="">
-
-
-                </div>
-            </div>
+          </div>
 
         </div>
+        <div class="col-md container--copy">
+          <p>I live in Englewood Colorado, just outside of denver!</p>
+
+          <ul>
+            <li><a href="tel:5108809752">Ph: 123-123-1234</a></li>
+            <li>
+              <a href="https://www.google.com/maps/place/12800+Roosevelt+Ln,+Englewood,+CO+80112/@39.5397413,-104.8447408,17z/data=!3m1!4b1!4m5!3m4!1s0x876c8562071da049:0x397f6aa1fb06031d!8m2!3d39.5397413!4d-104.8425521">
+              12800 Roosevelt Ln, Englewood, CO 80112
+              <a>
+              </li>
+             <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">MATTHEWAHAMLET@GMAIL.COM</a></li>
+          </ul>
+          <img src="images/googleMap/googlemap.png" alt="Google Map Image 12800 Roosevelt Ln, Englewood, CO 80112">
+
+
         </div>
-    </section>
-    <!-- /Contact Section -->
-        <!-- Footer -->
-        <footer>
-                <div class="container">
-                  <div class="row">
-          
-                    <div class="col-md-4 section--email">
-                      <p>Subscribe to AdobeXD via Email</p>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                      <!-- Email Sign-up -->
-                      <div class="form-group">
-                        <label for=""></label>
-                        <div class="flex">
-                          <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Email..">
-                          <button>SEND</button>
-                        </div>
-                        <!-- /Email Sign-up -->
-                      </div>
-                    </div>
-          
-                    <div class="col-md">
-          
-                      <div>
-                        <ul>
-                          <li>
-                            +44 445 678 903
-                          </li>
-                          <li>
-                            ADOBEXD@MAIL.COM
-                          </li>
-                          <li>
-                            FIND A STORE
-                          </li>
-                        </ul>
-                      </div>
-          
-                    </div>
-                    <div class="col-md">
-          
-                      <div>
-                        <ul>
-                          <li>
-                            CONTACT US
-                          </li>
-                          <li>
-                            ORDERING & PAYMENT
-                          </li>
-                          <li>
-                            SHIPPING
-                          </li>
-                          <li>
-                            RETURNS
-                          </li>
-                          <li>
-                            FAQ
-                          </li>
-                          <li>
-                            SIZING GUIDE
-                          </li>
-                        </ul>
-                      </div>
-          
-                    </div>
-          
-                  </div>
-                </div>
-              </footer>
-              <!-- /Footer -->
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- /Contact Section -->
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- Row -->
+      <div class="row">
+        <div class="col-md-4 section--email">
+          <!-- Email Sign-up -->
+          <div class="form-group">
+            <!-- MailChimp -->
+            <form action="https://facebook.us12.list-manage.com/subscribe/post" method="POST">
+              <input type="hidden" name="u" value="2806bfce93e3b5eb1e484110c">
+              <input type="hidden" name="id" value="a56bdb8062">
+              <!-- /MailChimp -->
+              <div class="flex">
+                <input type="email" class="form-control" name="email" aria-describedby="emailHelpId"
+                  placeholder="Email.." name="MERGE0" id="MERGE0">
+                <button value="Send" type="submit">SEND</button>
+            </form>
+          </div>
+          <!-- /Email Sign-up -->
+        </div>
+      </div>
+      <div class="col-md">
+        <!-- Contact -->
+        <div>
+          <ul>
+            <li><a href="tel:5108809752">+510 880 9752</a></li>
+            <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">MATTHEWAHAMLET@GMAIL.COM</a></li>
+            <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">Hire Me</a></li>
+          </ul>
+        </div>
+        <!-- /Contact -->
+      </div>
+      <div class="col-md">
+        <!-- Project List Links -->
+        <div>
+          <ul>
+            <li><a href="works--post-page00.html">Credit Card Checkout</a></li>
+            <!-- TODO: UPDATE WITH NEW WORK POST ITEMS -->
+            <li><a href="#">#</a></li>
+          </ul>
+        </div>
+        <!-- /Project List Links -->
+      </div>
+    </div>
+    <!-- /Row -->
+    </div>
+  </footer>
+  <!-- /Footer -->
 </body>
 
 </html>
