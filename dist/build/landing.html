@@ -8,44 +8,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <!-- /Meta -->
   <!-- Title -->
   <title>Matthew Hamlet</title>
-
+  <!-- /Title -->
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
   <link rel="manifest" href="images/favicons/site.webmanifest">
   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-
+  <!-- /Favicon -->
 
   <!-- JavaScript -->
   <script src="./bundle.js"></script>
+  <!-- /JavaScript -->
 </head>
 
 <body>
-
   <!-- Navigation -->
   <div class="container-fluid nav__container fixed-top">
     <ul class="nav">
       <img src="images/SVG/Asset 2logo--hamlet.svg" alt="Hamlet-logo" />
-
       <hr class="hr--horizontal" />
-
-      <li class="nav__list--item nav--link" role="about-link">About</li>
+      <!-- Navigation List Items -->
+      <li class="nav__list--item nav--link" role="about-link"><a href="about.html">About</a></li>
       <li class="nav__list--item list--decoration">&#183;</li>
-      <li class="nav__list--item nav--link" role="contact-link">Contact</li>
+      <li class="nav__list--item nav--link" role="contact-link"><a href="contact.html">Contact</a></li>
       <li class="nav__list--item list--decoration">&#183;</li>
-      <li class="nav__list--item nav--link" role="blog-link">Blog</li>
+      <li class="nav__list--item nav--link" role="blog-link"><a href="blog.html">Blog</a></li>
+      <!-- /Navigation List Items -->
     </ul>
   </div>
   <!-- /Navigation -->
   <!-- Main -->
   <main id="main">
+    <!-- Section Landing -->
     <section class="landing">
+      <!-- Header Container-->
       <div class="container">
+        <!-- Row -->
         <div class="row">
           <div class="col-md-8 col-lg-8 container--copy">
+            <!-- Header Information -->
             <h1 class="landing__header--copy">
               Hi there! My name is Matt,
               <br>
@@ -55,158 +60,120 @@
               <p>
                 That pretty much sums me up. I love dealing with complex problems in a creative way, whether it be
                 code, design or just fixing my partner's computer. I aim for simple, intuitive solutions that will
-                improve
-                the lives around me.
+                improve the lives around me.
               </p>
               <p id="job--looker">Currently seeking employment as a front-end UI developer</p>
             </article>
+            <!-- Social Links Resume Button -->
             <div class="social__icons--btn">
-              <a href="https://www.linkedin.com/in/matthewahamlet/"><img src="./images/SVG/linkedinIcon.svg" alt="Social-icon"></a>
+              <a href="https://www.linkedin.com/in/matthewahamlet/"><img src="./images/SVG/linkedinIcon.svg"
+                  alt="Social-icon"></a>
               <a href="https://github.com/MatthewaHamlet"><img src="./images/SVG/githubIcon.svg" alt="Social-icon"></a>
               <a href="images/resume/Resume.pdf" class="btn header__btn" role="resume button">Résumé</a>
             </div>
+            <!-- /Social Links Resume Button -->
+            <!-- Section Title -->
             <div class="container__section--title">
-              <h2 class="section__title--copy">Work <div class="section__title--line"></div>
+              <h2 class="section__title--copy">Work<div class="section__title--line"></div>
               </h2>
             </div>
+            <!-- /Section Title -->
+            <!-- /Header Information -->
           </div>
           <div class="col-md-3 container--image">
             <img src="./images/SVG/hamletMainImage.png" alt="Image of person: Matthew Hamlet">
           </div>
-
         </div>
+        <!-- /Row -->
+      </div>
+      <!-- /Header Container -->
     </section>
+    <!-- /Section Landing -->
     <!-- Section Work -->
     <section id="work" class="p-1">
-
+      <!-- Work Card 01 -->
       <div class="container  container__card">
         <div class="card">
+          <!-- Row -->
           <div class="row">
             <div class="col-md-4 p-0 container__img--left">
+              <!-- Card Image -->
               <img src="" class="w-100 h-100 p-0 m-0" alt="credit card checkout image">
+              <!-- /Card Image -->
             </div>
             <div class="col-md-8">
+              <!-- Card Block -->
               <div class="card-block">
+                <!-- Card Information -->
                 <p class="card--info-sub">2018 • Design & Front-end Dev</p>
                 <h4 class="card--title">Credit Card Checkout</h4>
                 <article class="card--article-copy">
-                  A personal project inspired by the daily UI challenge. Design and ui using Abode XD, Photoshop and Illustrator...
+                  A personal project inspired by the daily UI challenge. Design and ui using Abode XD, Photoshop and
+                  Illustrator...
                 </article>
                 <p class="card--info-sub">Personal Project - Making it easier to spend your money </p>
-                <a href="" class="btn card__btn" role="read more link 00"><img src="images/BlogPost/readMoreX.png" alt="">Read More</a>
+                <!-- /Card Information -->
+                <!-- Card Link -->
+                <a href="" class="btn card__btn" role="read more link 00"><img src="images/BlogPost/readMoreX.png"
+                    alt="">Read More</a>
+                <!-- /Card Link -->
               </div>
+              <!-- /Card Block -->
             </div>
           </div>
+          <!-- /Row -->
         </div>
       </div>
+      <!-- /Work Card 01 -->
 
-      <div class="container  container__card pt-3">
-          <div class="card">
-            <div class="row">
-              <div class="col-md-4 p-0 container__img--left">
-                <img src="" class="w-100 h-100 p-0 m-0" alt="Inkwell post image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-block">
-                  <p class="card--info-sub">2018 • Design & Front-end Dev</p>
-                  <h4 class="card--title">Inkwell Tattoo Equipment</h4>
-                  <article class="card--article-copy">
-                    Product website, Branding, and Development. Design, Branding, and Code...
-                  </article>
-                  <p class="card--info-sub">Commerce Project - Tattoo equipment </p>
-                  <a href="" class="btn card__btn" role="read more link 01"><img src="images/BlogPost/readMoreX.png" alt="">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container  container__card pt-3">
-            <div class="card">
-              <div class="row">
-                <div class="col-md-4 p-0 container__img--left">
-                  <img src="" class="w-100 h-100 p-0 m-0" alt="Creative Agency Template Image">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-block">
-                    <p class="card--info-sub">2019 • Design & Front-end Dev</p>
-                    <h4 class="card--title">Creative Agency Website Template</h4>
-                    <article class="card--article-copy">
-                      Agency website, Template, and Development. Design, and Code...
-                    </article>
-                    <p class="card--info-sub">Agency Website - Template </p>
-                    <a href="" class="btn card__btn" role="read more link 02"><img src="images/BlogPost/readMoreX.png" alt="">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      
     </section>
-    <!-- Footer --> 
+    <!-- /Section Work -->
+    <!-- Footer -->
     <footer>
       <div class="container">
+        <!-- Row -->
         <div class="row">
-
           <div class="col-md-4 section--email">
-            <p>Subscribe to Matthew Hamlet Blog</p>
-            <p>I promise i wont spam you!</p>
             <!-- Email Sign-up -->
-            <div class="form-group" action="./php/subscribe.php" method="post">
-              <label for="email"></label>
+            <div class="form-group">
+              <!-- MailChimp -->
+              <form action="https://facebook.us12.list-manage.com/subscribe/post" method="POST">
+                <input type="hidden" name="u" value="2806bfce93e3b5eb1e484110c">
+                <input type="hidden" name="id" value="a56bdb8062">
+            <!-- /MailChimp -->
               <div class="flex">
-                <input  type="email" class="form-control" name="email" aria-describedby="emailHelpId" placeholder="Email..">
+                <input type="email" class="form-control" name="email" aria-describedby="emailHelpId"
+                  placeholder="Email.." name="MERGE0" id="MERGE0">  
                 <button value="Send" type="submit">SEND</button>
+             </form>
               </div>
               <!-- /Email Sign-up -->
             </div>
           </div>
-
           <div class="col-md">
-
+            <!-- Contact -->
             <div>
               <ul>
-                <li>
-                  +510 880 9752
-                </li>
-                <li>
-                  MATTHEWAHAMLET@GMAIL.COM
-                </li>
-                <li>
-                  Hire Me
-                </li>
+                <li><a href="tel:5108809752">+510 880 9752</a></li>
+                <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">MATTHEWAHAMLET@GMAIL.COM</a></li>
+                <li><a href="mailto:matthewahamlet@gmail.com" target="_blank">Hire Me</a></li>
               </ul>
             </div>
-
+            <!-- /Contact -->
           </div>
           <div class="col-md">
-
+            <!-- Project List Links -->
             <div>
               <ul>
-                <li>
-                  CONTACT US
-                </li>
-                <li>
-                  ORDERING & PAYMENT
-                </li>
-                <li>
-                  SHIPPING
-                </li>
-                <li>
-                  RETURNS
-                </li>
-                <li>
-                  FAQ
-                </li>
-                <li>
-                  SIZING GUIDE
-                </li>
+                <li><a href="works--post-page00.html">Credit Card Checkout</a></li>
+                <!-- TODO: UPDATE WITH NEW WORK POST ITEMS -->
+                <li><a href="#">#</a></li>
               </ul>
             </div>
-
+            <!-- /Project List Links -->
           </div>
-
         </div>
+        <!-- /Row -->
       </div>
     </footer>
     <!-- /Footer -->

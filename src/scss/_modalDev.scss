@@ -1,0 +1,37 @@
+.modal--dev {
+    background: $bgColorAssets;
+
+    .modal-content {
+        background: $bgColor;
+        border: 2px solid $fontColor;
+
+        .modal-header {
+            border-color: $fontColor;
+
+            .modal-title {
+                color: $fontColor;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            span {
+                color: $fontColor;
+            }
+        }
+
+        .modal-body {
+            color: $secondaryFontColor;
+
+            h4 {
+                color: $fontColor;
+            }
+            img {
+                border-radius: 3px;
+            }
+
+            figcaption {
+                font-size: 8px;
+            }
+
+        }
+    }
+}

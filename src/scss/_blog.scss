@@ -52,7 +52,7 @@
 #main > section.landing > div > div > div.col-md-3.container--image > img {
     width: 480px;
     left: -9.5rem;
-    top: $bgColor;
+   
 
     @media all and (min-width: 1024px){
         width: 560px;
@@ -63,3 +63,6 @@
     }
 
 }
+
+// Disqus Comment Section 
+
