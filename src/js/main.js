@@ -1,8 +1,5 @@
+// JQuery / JavaScript
 
-
-// Landing page javaScript
-
-// JQuery
 $(function(){
 // text injection function for nav link items 
 function navLink(element, value){
@@ -32,6 +29,7 @@ var anchorLinksObj = {
     worksPost02: 'works--post-page02.html',
     worksPost03: 'works--post-page03.html',
     worksPost04: 'works--post-page04.html',
+    worksPost04: 'works--post-page04.html',
 }
 // NOTE: A loop may work better here. If the order is to remain the same.
 // Anchor links injection on all pages that apply
@@ -49,14 +47,16 @@ var imgArr = [
     '/images/cardImages/cardFarmWeb.png',
     '/images/doctorWhoDiceGame/Images/doctorWhoDiceGameWeb.png',
     '/images/creativeAgency/Images/creativeAgencyWeb.png',
+    '/src/images/omniFoodTheme/Images/omniFoodWeb.png',
   ];
 // Card image 
-// NOTE: Could use a loop/each here.
+// NOTE: Could use a loop here.
 cardImage('[alt="credit card checkout image"]', imgArr[0]);
 cardImage('[alt="Inkwell post image"]', imgArr[1]);
 cardImage('[alt="Card Farm Game"]', imgArr[2]);
 cardImage('[alt="Doctor Who Dice Game"]', imgArr[3]);
 cardImage('[alt="Creative Agency Theme"]', imgArr[4]); 
+cardImage('[alt="Creative Agency Theme"]', imgArr[5]); 
 
 
 // Gallery 
