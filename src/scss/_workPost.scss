@@ -36,12 +36,18 @@ section.testimonial {
                 width: 100%;
                 color: $secondaryFontColor;
 
-                &::before {
-                    content: '"';
-                    font-size: 22px;
-                    color: $fontColor;
+                // &::before {
+                //     content: '"';
+                //     font-size: 22px;
+                //     color: $fontColor;
+                // }
+
+                @media screen and (min-width: 768px) {
+                    width: 80%;
                 }
             }
+
+            
 
             @media screen and (min-width: 320px) {
                 width: 100%;
@@ -50,7 +56,7 @@ section.testimonial {
     }
 }
 
-//  Works Post page Credit Card Checkout 
+//  Works Post page 00 Credit Card Checkout 
 
 #about>div>div>div.col-sm.col-md-6.container__copy--about.container__works--post-copy {
     background: $bgColor;
@@ -75,7 +81,7 @@ section.testimonial {
 
 #img--macbook {
     height: 306px;
-    background: url(/images/workPosts/workPostOne/worksPostOneMacBook.png)no-repeat center;
+    background: url(/images/creditCardCheckout/Web.svg)no-repeat center;
     background-size: contain;
 
     @media all and (min-width: 768px) {
@@ -88,7 +94,7 @@ section.testimonial {
 
 #img--iphone {
     height: 306px;
-    background: url(/images/workPosts/workPostOne/worksPostOneIphone.png)no-repeat center;
+    background: url(/images/creditCardCheckout/iPhone.svg)no-repeat center;
     background-size: contain;
 
     @media all and (min-width: 768px) {
@@ -119,7 +125,7 @@ img[alt="i-pad app post image"] {
     @media all and (min-width: 768px) {
         width: 408px;
         position: absolute;
-        top: 5rem;
+        top: 1.2rem;
         left: -9rem;
     }
 
@@ -133,5 +139,118 @@ img[alt="i-pad app post image"] {
         width: 508px;
         position: absolute;
         left: -7rem;
+        top: 5rem;
     }
 }
+
+// Works Post Page 01 Business Site Template 
+#img--macbook-01 {
+    height: 306px;
+    background: url(/images/businessSiteTemplate/Images/web.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+    @media all and (min-width: 1440px) {
+        height: 506px;
+    }
+}
+
+#img--iphone-01 {
+    height: 306px;
+    background: url(/images/businessSiteTemplate/Images/iPhone.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+
+    @media all and (min-width: 1440px) {
+        height: 416px;
+    }
+}
+// Works Post Page 02 Card Farm 
+#img--macbook-02 {
+    height: 306px;
+    background: url(/images/cardFarm/Images/cardFarmWeb.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+    @media all and (min-width: 1440px) {
+        height: 506px;
+    }
+}
+
+#img--iphone-02 {
+    height: 306px;
+    background: url(/images/cardFarm/Images/cardFarmiPhone.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+
+    @media all and (min-width: 1440px) {
+        height: 416px;
+    }
+}
+
+// Works Post Page 03 Doctor Who Dice Game 
+#img--macbook-03 {
+    height: 306px;
+    background: url(/images/doctorWhoDiceGame/Images/doctorWhoDiceGameWeb.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+    @media all and (min-width: 1440px) {
+        height: 506px;
+    }
+}
+
+#img--iphone-03 {
+    height: 306px;
+    background: url(/images/doctorWhoDiceGame/Images/doctorWhoDiceGameiPhone.png)no-repeat center;
+    background-size: contain;
+    transform: rotate(270deg);
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+
+    @media all and (min-width: 1440px) {
+        height: 416px;
+    }
+}
+// Works Post Page 04 Creative Agency Theme 
+#img--macbook-04 {
+    height: 306px;
+    background: url(/images/creativeAgency/Images/creativeAgencyWeb.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+    @media all and (min-width: 1440px) {
+        height: 506px;
+    }
+}
+
+#img--iphone-04 {
+    height: 306px;
+    background: url(/images/creativeAgency/Images/creativeAgencyiPhone.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+
+    @media all and (min-width: 1440px) {
+        height: 416px;
+    }   
+}
+

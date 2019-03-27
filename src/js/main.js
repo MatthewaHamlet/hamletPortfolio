@@ -19,10 +19,7 @@ function anchorLinks(element, value) {
 function cardImage(element, image) {
     $(element).attr('src', image);
 }
-// Nav link injection
-navLink('[role="about-link"]', 'about.html');
-navLink('[role="contact-link"]', 'contact.html');
-navLink('[role="blog-link"]', 'blog.html');
+// Anchor link injection
 navLink('img[alt="Hamlet-logo"', 'landing.html')
 
 
@@ -32,25 +29,34 @@ var anchorLinksObj = {
     gitHub : 'https://github.com/MatthewaHamlet',
     worksPost00: 'works--post-page00.html',
     worksPost01: 'works--post-page01.html',
-    worksPost02: 'works--post-page02.html'
+    worksPost02: 'works--post-page02.html',
+    worksPost03: 'works--post-page03.html',
+    worksPost04: 'works--post-page04.html',
 }
-
+// NOTE: A loop may work better here. If the order is to remain the same.
 // Anchor links injection on all pages that apply
 anchorLinks('div.social__icons--btn > a:nth-child(1)', anchorLinksObj.linkedIn);
 anchorLinks('[alt="github"]', anchorLinksObj.gitHub);
 anchorLinks('[role="read more link 00"]', anchorLinksObj.worksPost00);
 anchorLinks('[role="read more link 01"]', anchorLinksObj.worksPost01);
 anchorLinks('[role="read more link 02"]', anchorLinksObj.worksPost02);
-
+anchorLinks('[role="read more link 03"]', anchorLinksObj.worksPost03);
+anchorLinks('[role="read more link 04"]', anchorLinksObj.worksPost04);
 // Card image array.
-var imgArr = ['./images/cardImages/Mask Group 2.png', 
-'./images/workPosts/workPostTwo/workPostTwoHeaderIpad.png',
-'./images/workPosts/workPostThree/workPostThreeCardImg.png'];
+var imgArr = [
+    '/images/cardImages/creditCardCheckout.png', 
+    '/images/cardImages/businessThemeWeb.png',
+    '/images/cardImages/cardFarmWeb.png',
+    '/images/doctorWhoDiceGame/Images/doctorWhoDiceGameWeb.png',
+    '/images/creativeAgency/Images/creativeAgencyWeb.png',
+  ];
 // Card image 
-// Could use a loop/each here
+// NOTE: Could use a loop/each here.
 cardImage('[alt="credit card checkout image"]', imgArr[0]);
 cardImage('[alt="Inkwell post image"]', imgArr[1]);
-cardImage('[alt="Creative Agency Template Image"]', imgArr[2]);
+cardImage('[alt="Card Farm Game"]', imgArr[2]);
+cardImage('[alt="Doctor Who Dice Game"]', imgArr[3]);
+cardImage('[alt="Creative Agency Theme"]', imgArr[4]); 
 
 
 // Gallery 

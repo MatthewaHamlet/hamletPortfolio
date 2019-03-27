@@ -83,6 +83,21 @@ module.exports = {
             template: 'src/works--post-page01.html',
             chunks: []
         }),
+        new HtmlWebpackPlugin({
+            filename: 'works--post-page02.html',
+            template: 'src/works--post-page02.html',
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'works--post-page03.html',
+            template: 'src/works--post-page03.html',
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'works--post-page04.html',
+            template: 'src/works--post-page04.html',
+            chunks: []
+        }),
 
         new webpack.ProvidePlugin({
             $: 'jquery',

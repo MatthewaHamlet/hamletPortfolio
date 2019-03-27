@@ -173,7 +173,7 @@ section.landing {
     }
 
     article p {
-        width: 80%;
+        width: 70%;
         line-height: 18px;
     }
 
@@ -278,7 +278,6 @@ section.landing {
     width: 100vw;
     height: 100%;
     margin-top: 1%;
-    // z-index: 1202;
     padding: 0 3px 0 3px;
     margin: 0 auto;
 
@@ -287,19 +286,14 @@ section.landing {
         border: none;
         overflow: hidden;
         border-radius: 3px;
-        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
-
-        &:hover {
-            cursor: pointer;
-            box-shadow: 0 8px 0 rgba(0, 0, 0, 0.25);
-        }
 
         .card {
             border: none;
             
             .container__img--left {
                 background: $bgColor;
-                background-size: cover;
+                background-size: contain;
+                filter: opacity(0.9)
             }
 
             .card-block {
@@ -349,7 +343,7 @@ section.landing {
 }
 
 // Screens 1440px 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1440px) {
     #work {
         margin-top: 21rem;
     }
