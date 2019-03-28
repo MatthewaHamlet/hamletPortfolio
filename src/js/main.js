@@ -30,6 +30,7 @@ var anchorLinksObj = {
     worksPost03: 'works--post-page03.html',
     worksPost04: 'works--post-page04.html',
     worksPost04: 'works--post-page04.html',
+    worksPost05: 'works--post-page05.html'
 }
 // NOTE: A loop may work better here. If the order is to remain the same.
 // Anchor links injection on all pages that apply
@@ -40,6 +41,7 @@ anchorLinks('[role="read more link 01"]', anchorLinksObj.worksPost01);
 anchorLinks('[role="read more link 02"]', anchorLinksObj.worksPost02);
 anchorLinks('[role="read more link 03"]', anchorLinksObj.worksPost03);
 anchorLinks('[role="read more link 04"]', anchorLinksObj.worksPost04);
+anchorLinks('[role="read more link 05"]', anchorLinksObj.worksPost05);
 // Card image array.
 var imgArr = [
     '/images/cardImages/creditCardCheckout.png', 
@@ -47,16 +49,17 @@ var imgArr = [
     '/images/cardImages/cardFarmWeb.png',
     '/images/doctorWhoDiceGame/Images/doctorWhoDiceGameWeb.png',
     '/images/creativeAgency/Images/creativeAgencyWeb.png',
-    '/src/images/omniFoodTheme/Images/omniFoodWeb.png',
+    '/images/omniFoodTheme/Images/omniFoodWeb.png',
   ];
 // Card image 
-// NOTE: Could use a loop here.
+// NOTE: Could use a loop here. If image remain in same order.
 cardImage('[alt="credit card checkout image"]', imgArr[0]);
 cardImage('[alt="Inkwell post image"]', imgArr[1]);
 cardImage('[alt="Card Farm Game"]', imgArr[2]);
 cardImage('[alt="Doctor Who Dice Game"]', imgArr[3]);
 cardImage('[alt="Creative Agency Theme"]', imgArr[4]); 
-cardImage('[alt="Creative Agency Theme"]', imgArr[5]); 
+cardImage('[alt="Omni-Food Theme"]', imgArr[5]);
+
 
 
 // Gallery 
@@ -146,7 +149,5 @@ $( ".img-wrapper" ).hover(
     // Fade out the overlay
     $("#overlay").fadeOut("slow");
   });
-
-
   
 });

@@ -253,4 +253,31 @@ img[alt="i-pad app post image"] {
         height: 416px;
     }   
 }
+// Works Post Page 05 Omni-food Theme
+#img--macbook-05 {
+    height: 306px;
+    background: url(/images/omniFoodTheme/Images/omniFoodWeb.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+    @media all and (min-width: 1440px) {
+        height: 506px;
+    }
+}
+
+#img--iphone-05 {
+    height: 306px;
+    background: url(/images/omniFoodTheme/Images/omniFoodiPhone.png)no-repeat center;
+    background-size: contain;
+
+    @media all and (min-width: 768px) {
+        height: 406px;
+    }
+
+    @media all and (min-width: 1440px) {
+        height: 416px;
+    }   
+}
 
